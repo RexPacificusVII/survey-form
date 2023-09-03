@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Feedback and Preference Survey</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <div id="form">
+    <h1 id="title">Employee Feedback and Preference Survey</h1>
+    <p id="description">Please take a moment to share your thoughts and preferences regarding your workplace experience.</p>
+    <hr>
+    <form id="survey-form" method="post" action="/">
+
+        <!-- PERSONAL INFORMATION -->
+
+        <fieldset>
+            <legend>Personal Information:</legend>
+
+            <label id="name-label" for="name">Name <input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
+            <label id="email-label" for="email">Email <input id="email" name="email" type="email" required placeholder="Enter your email" /></label>
+            <label id="number-label" for="number">Age (optional) <input id="number" type="number" name="number" min="18" max="120" placeholder="Age" /></label>
+
+        </fieldset>
+
+        <!-- WORKPLACE COMMUNICTION -->
+
+        <fieldset>
+            <legend>Workplace Communication:</legend>
+
+            <p>How satisfied are you with the overall communication within the company?</p>
+            <select id="dropdown">
+                <option value="">Select your answer</option>
+                <option value="5">Very Satisfied</option>
+                <option value="4">Satisfied</option>
+                <option value="3">Neutral</option>
+                <option value="2">Dissatisfied</option>
+                <option value="1">Very Dissatisfied</option>
+            </select>
+
+            <p>How often do you feel well-informed about company updates and news?</p>
+            <select id="dropdown2">
+                <option value="">Select your answer</option>
+                <option value="5">Always</option>
+                <option value="4">Often</option>
+                <option value="3">Occasionally</option>
+                <option value="2">Rarely</option>
+                <option value="1">Never</option>
+            </select>
+
+        </fieldset>
+
+        <!-- WORK ENVIRONMENT -->
+
+        <fieldset>
+            <legend>Work Environment:</legend>
+
+            <p>Please select the office amenities that are important to you (Check all that apply):</p>
+            <label for="flexible-work-hours"><input id="flexible-work-hours" type="checkbox" value="flexible-work-hours" name="amenities"> Flexible work hours</label>
+            <label for="remote-work-options"><input id="remote-work-options" type="checkbox" value="remote-work-options" name="amenities"> Remote work options</label>
+            <label for="on-site-gym"><input id="on-site-gym" type="checkbox" value="on-site-gym" name="amenities"> On-site gym</label>
+            <label for="cafeteria"><input id="cafeteria" type="checkbox" value="cafeteria" name="amenities"> Cafeteria</label>
+            <label for="quiet-workspace"><input id="quiet-workspace" type="checkbox" value="quiet-workspace" name="amenities"> Quiet workspace</label>
+
+        </fieldset>
+
+        <!-- TEAM COLLABORATION -->
+
+        <fieldset>
+            <legend>Team Collaboration</legend>
+
+            <p>Do you feel that team meetings are productive and efficient?</p>
+            <label for="yes"><input id="yes" type="radio" name="choice" value="yes" checked /> Yes</label>
+            <label for="no"><input id="no" type="radio" name="choice" value="no" /> No</label>
+            <label for="sometimes"><input id="sometimes" type="radio" name="choice" value="sometimes" /> Sometimes</label>
+            
+            <p>How satisfied are you with the level of collaboration within your team?</p>
+            <select id="dropdown3">
+                <option value="">Select your answer</option>
+                <option value="5">Very Satisfied</option>
+                <option value="4">Satisfied</option>
+                <option value="3">Neutral</option>
+                <option value="2">Dissatisfied</option>
+                <option value="1">Very Dissatisfied</option>
+            </select>
+
+        </fieldset>
+
+        <!-- FEEDBACK AND SUGGESTIONS -->
+
+        <fieldset>
+            <legend>Feedback and Suggestions:</legend>
+            <label for="suggestions">Please share any comments or suggestions you have to improve our workplace:
+                <textarea id="suggestions" name="suggestions" placeholder="Enter your comments here..."></textarea>
+            </label>
+
+        </fieldset>
+
+        <!-- SUBMIT -->
+
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+    </div>
+  </body>
+</html>
