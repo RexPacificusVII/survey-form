@@ -13,6 +13,7 @@ body {
 div[id="form"] {
     display: block;
     background-color: #0C111FCC;
+    border-radius: 20px;
     color: white;
     width: 80%;
     max-width: 500px;
