@@ -15,4 +15,4 @@ This project is a web-based mock survey form, created as part of the requirement
 
 Please keep in mind that this project does not involve real data collection or analysis and is intended solely for educational purposes within the freeCodeCamp curriculum. Feel free to adapt and expand upon this project to further your web development journey or share it with others interested in learning about survey design and web development.
 
-We hope you find this Mock Survey Form Website project valuable for your educational endeavors. If you have any questions or suggestions, please don't hesitate to reach out.
+I hope you find this Mock Survey Form Website project valuable for your educational endeavors. If you have any questions or suggestions, please don't hesitate to reach out.
